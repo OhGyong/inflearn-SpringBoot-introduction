@@ -10,13 +10,13 @@ import java.util.List;
 import java.util.Optional;
 
 
-// 핵심 비즈니스 로직 구현
-@Service
+/**
+ * 핵심 비즈니스 로직 구현
+ */
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
